@@ -1,0 +1,2346 @@
+[
+    {
+        "id": "795a4321d6549d7e",
+        "type": "tab",
+        "label": "Reset",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e36a043252321588",
+        "type": "tab",
+        "label": "Switches and Charts",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9fa64bccef20b494",
+        "type": "tab",
+        "label": "Google Home",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b8b00db06149ad3f",
+        "type": "tab",
+        "label": "Telegram",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "46bf4f1a2855f283",
+        "type": "tab",
+        "label": "Alarms",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6043facb0a1b0b51",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a2ee0ee1f3f91507",
+        "type": "ui_tab",
+        "name": "Safety&Care System",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "38b21d93f3af0dc6",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#e6740a",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Custom Profile 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#e6740a",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#e6740a",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#f79b46",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#e6740a",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "SCS Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "54b10bc2cbab0d7b",
+        "type": "ui_group",
+        "name": "Info",
+        "tab": "a2ee0ee1f3f91507",
+        "order": 1,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7bb0b5cf7a629cfc",
+        "type": "mqtt-broker",
+        "name": "Safety&Care Server",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e595704805e6c792",
+        "type": "nora-config",
+        "name": "NORA Configuration",
+        "group": "Switch",
+        "notify": false
+    },
+    {
+        "id": "2ea0507ebba899d6",
+        "type": "noraf-config",
+        "name": "Safety&Care System",
+        "group": "Smart Devices",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "localexecution": true,
+        "structure": "",
+        "storeStateInContext": false,
+        "disableValidationErrors": false
+    },
+    {
+        "id": "ade52f3e808c7c25",
+        "type": "telegram bot",
+        "botname": "SCS bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "0863cc2c501218da",
+        "type": "ui_spacer",
+        "z": "e36a043252321588",
+        "name": "spacer",
+        "group": "d6e52ab361510b3b",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe349c42352c2405",
+        "type": "ui_spacer",
+        "z": "e36a043252321588",
+        "name": "spacer",
+        "group": "d6e52ab361510b3b",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "48c2b88582138584",
+        "type": "ui_spacer",
+        "z": "e36a043252321588",
+        "name": "spacer",
+        "group": "d6e52ab361510b3b",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bf26fca568bf0aa9",
+        "type": "ui_spacer",
+        "z": "e36a043252321588",
+        "name": "spacer",
+        "group": "d6e52ab361510b3b",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "44ad316bfd64765c",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "a2ee0ee1f3f91507",
+        "order": 2,
+        "disp": true,
+        "width": 14,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "04d952e7bb434631",
+        "type": "ui_group",
+        "name": "Monitoring",
+        "tab": "a2ee0ee1f3f91507",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ca2b7a4434d70b09",
+        "type": "ui_button",
+        "z": "795a4321d6549d7e",
+        "name": "",
+        "group": "54b10bc2cbab0d7b",
+        "order": 7,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "label": "RESET CHARTS",
+        "tooltip": "Reset every device in your house",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "4ec60c7fa40deb9f"
+            ]
+        ]
+    },
+    {
+        "id": "9e810c0848fd0ada",
+        "type": "ui_toast",
+        "z": "795a4321d6549d7e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 770,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87946b7098dffb57",
+        "type": "link out",
+        "z": "795a4321d6549d7e",
+        "name": "Reset Devices Link",
+        "mode": "link",
+        "links": [
+            "a4d64ff84956bfa2",
+            "afa64c52a06beb28",
+            "eccaa19e24bac91b",
+            "f5f5555bf3b75d86",
+            "4af7cb821ea04752",
+            "0c53dd20d99d425f"
+        ],
+        "x": 795,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "14cad4b97674adb3",
+        "type": "ui_template",
+        "z": "795a4321d6549d7e",
+        "group": "54b10bc2cbab0d7b",
+        "name": "Dashboard Customization",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nbody {\n    color: #FFF !important;\n    /background-color: #633cff;/\n    /background-image: linear-gradient(225deg, #633cff 0%, #534ba0 50%, #2B86C5 100%);/\n    /background-color: #171719;/\n    /background-image: linear-gradient(225deg, #171719 0%, #192ec4 55%, #287cd0 90%);/\n    background-color: #FF3CAC;\n    background-image: url(\"https://www.leggioggi.it/wp-content/uploads/2020/10/concorso-inps-165-informatici.jpg\");\n    /background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);/\n   \n    \n}\n.nr-dashboard-cardpanel {\n    box-sizing: border-box;\n    background-color: transparent !important;\n}\n\nelement.style{\n    left: 0px;\n    top: 0px;\n    width: 264px;\n    height: 48px;\n}\n.nr-dashboard-theme ui-card-panel {\n    background-color: transparent !important;\n    border: 0px !important;\n    opacity: 0.8;\n}\nbody.nr-dashboard-theme md-toolbar {\n    background-color: transparent;\n}\nbody.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    color: darkorange;\n}\n.nr-dashboard-theme ui-card-panel *{\n    border-radius: 10px !important;\n}\n.nr-dashboard-chart-container{\n    background-color: transparent !important;\n}\n.md.layout-align-center-center.visible{\n    background-color: transparent !important;\n}\nbody.nr-dashboard-theme md-content md-card {\n    background-color: rgb(0,0,0,0.5) !important;\n    color : white !important;\n}\n.md-toolbar-tools{\n    font-size: 34 !important;\n}\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 470,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cd298b6194aaba6",
+        "type": "ui_toast",
+        "z": "795a4321d6549d7e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "Reset",
+        "cancel": "Cancel",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 650,
+        "y": 100,
+        "wires": [
+            [
+                "d1d42132c5882f98"
+            ]
+        ]
+    },
+    {
+        "id": "4ec60c7fa40deb9f",
+        "type": "template",
+        "z": "795a4321d6549d7e",
+        "name": "Reset message",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "mustache",
+        "template": "This action will reset every chart in your dashboard.\nAre you sure?",
+        "output": "str",
+        "x": 440,
+        "y": 100,
+        "wires": [
+            [
+                "2cd298b6194aaba6"
+            ]
+        ]
+    },
+    {
+        "id": "9374cf02f4411592",
+        "type": "template",
+        "z": "795a4321d6549d7e",
+        "name": "Reset message",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "mustache",
+        "template": "Charts' reset completed.",
+        "output": "str",
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "9e810c0848fd0ada"
+            ]
+        ]
+    },
+    {
+        "id": "d1d42132c5882f98",
+        "type": "switch",
+        "z": "795a4321d6549d7e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Reset",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "bd48d62ae0f3a7f9"
+            ]
+        ]
+    },
+    {
+        "id": "bd48d62ae0f3a7f9",
+        "type": "change",
+        "z": "795a4321d6549d7e",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "Reset",
+                "fromt": "str",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 160,
+        "wires": [
+            [
+                "9374cf02f4411592",
+                "87946b7098dffb57"
+            ]
+        ]
+    },
+    {
+        "id": "4c2214200f17432d",
+        "type": "ui_gauge",
+        "z": "e36a043252321588",
+        "name": "Fan Speed",
+        "group": "04d952e7bb434631",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Fan speed",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "35",
+        "seg2": "70",
+        "className": "",
+        "x": 630,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "063d92d558fdbcbf",
+        "type": "function",
+        "z": "e36a043252321588",
+        "name": "Clear Chart",
+        "func": "msg.payload =  [];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "71d7c7a2daf0d5d2",
+                "95c227083b3fa29e",
+                "1d9904ab6c2399c1"
+            ]
+        ]
+    },
+    {
+        "id": "bef4842795725871",
+        "type": "ui_gauge",
+        "z": "e36a043252321588",
+        "name": "Gas Index",
+        "group": "04d952e7bb434631",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Gas Index",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1.70",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1.0",
+        "seg2": "1.40",
+        "className": "",
+        "x": 630,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "71d7c7a2daf0d5d2",
+        "type": "ui_chart",
+        "z": "e36a043252321588",
+        "name": "",
+        "group": "44ad316bfd64765c",
+        "order": 3,
+        "width": 14,
+        "height": 4,
+        "label": "Gas Index Values",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1.70",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff7f0e",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e81b2d170f472b67",
+        "type": "ui_switch",
+        "z": "e36a043252321588",
+        "name": "",
+        "label": "Care System",
+        "tooltip": "Activate/Deactivate Care System",
+        "group": "54b10bc2cbab0d7b",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 570,
+        "y": 40,
+        "wires": [
+            [
+                "4d51ef0bef5fbab3"
+            ]
+        ]
+    },
+    {
+        "id": "432f4da6bfb9b150",
+        "type": "ui_switch",
+        "z": "e36a043252321588",
+        "name": "",
+        "label": "Safety System",
+        "tooltip": "Activate/Deactivate Safety System",
+        "group": "54b10bc2cbab0d7b",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "Yellow",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 580,
+        "y": 100,
+        "wires": [
+            [
+                "8dd19097f2d76a98"
+            ]
+        ]
+    },
+    {
+        "id": "9bae4a2af60ef209",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "3bb2c18d17f6ea38",
+            "79af65a690ef7ac7",
+            "fb163bd86e7e3339"
+        ],
+        "x": 305,
+        "y": 40,
+        "wires": [
+            [
+                "fff2483a8c1a4d0a"
+            ]
+        ]
+    },
+    {
+        "id": "a4d64ff84956bfa2",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "87946b7098dffb57"
+        ],
+        "x": 295,
+        "y": 260,
+        "wires": [
+            [
+                "063d92d558fdbcbf",
+                "4c2214200f17432d",
+                "bef4842795725871",
+                "dacf3d63d940e721",
+                "68b5e987a193c6c4"
+            ]
+        ]
+    },
+    {
+        "id": "4d51ef0bef5fbab3",
+        "type": "link out",
+        "z": "e36a043252321588",
+        "name": "Care Status Link",
+        "mode": "link",
+        "links": [
+            "0735e797c3c0f143",
+            "b854a776284ec1ff",
+            "071c17e7cf2ee5c3",
+            "fc7b3e5bbc385e79",
+            "e04d15f34b5a2ac9"
+        ],
+        "x": 705,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8dd19097f2d76a98",
+        "type": "link out",
+        "z": "e36a043252321588",
+        "name": "Alarm Status Link",
+        "mode": "link",
+        "links": [
+            "71e050602efd0522",
+            "7aaa711bd0c463fc",
+            "8d585f09c89b67a5",
+            "f526b70120bcf388"
+        ],
+        "x": 705,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "759e7ac898fc83df",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "2175a5509b9fbc67",
+            "3ee8f542aa25af2a",
+            "bf6c12817e192b63"
+        ],
+        "x": 305,
+        "y": 100,
+        "wires": [
+            [
+                "353fe6e20b253b2e"
+            ]
+        ]
+    },
+    {
+        "id": "dacf3d63d940e721",
+        "type": "ui_text",
+        "z": "e36a043252321588",
+        "group": "54b10bc2cbab0d7b",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Fan Speed:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 630,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "68b5e987a193c6c4",
+        "type": "ui_text",
+        "z": "e36a043252321588",
+        "group": "54b10bc2cbab0d7b",
+        "order": 6,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Gas index:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 630,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "55f5d759788b516e",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "4e0d0f4a99ddd1bc"
+        ],
+        "x": 295,
+        "y": 320,
+        "wires": [
+            [
+                "dacf3d63d940e721",
+                "4c2214200f17432d"
+            ]
+        ]
+    },
+    {
+        "id": "5e1110aa61dfeb55",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "9420b98d951479d1"
+        ],
+        "x": 295,
+        "y": 380,
+        "wires": [
+            [
+                "71d7c7a2daf0d5d2",
+                "bef4842795725871",
+                "68b5e987a193c6c4"
+            ]
+        ]
+    },
+    {
+        "id": "f526b70120bcf388",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "8dd19097f2d76a98"
+        ],
+        "x": 295,
+        "y": 500,
+        "wires": [
+            [
+                "9ffa6fb3f901b002"
+            ]
+        ]
+    },
+    {
+        "id": "fc7b3e5bbc385e79",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "4d51ef0bef5fbab3"
+        ],
+        "x": 295,
+        "y": 440,
+        "wires": [
+            [
+                "188248b6ee2a5f09"
+            ]
+        ]
+    },
+    {
+        "id": "9ffa6fb3f901b002",
+        "type": "function",
+        "z": "e36a043252321588",
+        "name": "safetyStatusFunction",
+        "func": "msg.topic=\"Safety Status\";\nif(msg.payload==true){\n    msg.payload=1;\n}\nelse{\n    msg.payload=0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 500,
+        "wires": [
+            [
+                "1d9904ab6c2399c1"
+            ]
+        ]
+    },
+    {
+        "id": "188248b6ee2a5f09",
+        "type": "function",
+        "z": "e36a043252321588",
+        "name": "careStatusFunction",
+        "func": "msg.topic=\"Care Status\";\nif(msg.payload==true){\n    msg.payload=1;\n}\nelse{\n    msg.payload=0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 440,
+        "wires": [
+            [
+                "95c227083b3fa29e"
+            ]
+        ]
+    },
+    {
+        "id": "95c227083b3fa29e",
+        "type": "ui_chart",
+        "z": "e36a043252321588",
+        "name": "",
+        "group": "44ad316bfd64765c",
+        "order": 1,
+        "width": 14,
+        "height": 3,
+        "label": "Care On/Off",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": "10",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f7f713",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d9904ab6c2399c1",
+        "type": "ui_chart",
+        "z": "e36a043252321588",
+        "name": "",
+        "group": "44ad316bfd64765c",
+        "order": 2,
+        "width": 14,
+        "height": 3,
+        "label": "Safety On/Off",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": "10",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f60c0c",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 660,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f437196039528f78",
+        "type": "ui_clock",
+        "z": "e36a043252321588",
+        "name": "Clock",
+        "group": "54b10bc2cbab0d7b",
+        "order": 1,
+        "width": 5,
+        "height": 5,
+        "x": 590,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e4f8912d690977b6",
+        "type": "inject",
+        "z": "e36a043252321588",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "f437196039528f78"
+            ]
+        ]
+    },
+    {
+        "id": "fff2483a8c1a4d0a",
+        "type": "rbe",
+        "z": "e36a043252321588",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 410,
+        "y": 40,
+        "wires": [
+            [
+                "e81b2d170f472b67"
+            ]
+        ]
+    },
+    {
+        "id": "353fe6e20b253b2e",
+        "type": "rbe",
+        "z": "e36a043252321588",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "432f4da6bfb9b150"
+            ]
+        ]
+    },
+    {
+        "id": "e04d15f34b5a2ac9",
+        "type": "link in",
+        "z": "e36a043252321588",
+        "name": "",
+        "links": [
+            "4d51ef0bef5fbab3"
+        ],
+        "x": 265,
+        "y": 180,
+        "wires": [
+            [
+                "ae2157cf77b15f23"
+            ]
+        ]
+    },
+    {
+        "id": "ca4b7671aa1165d9",
+        "type": "change",
+        "z": "e36a043252321588",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "4c2214200f17432d"
+            ]
+        ]
+    },
+    {
+        "id": "ae2157cf77b15f23",
+        "type": "switch",
+        "z": "e36a043252321588",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "ca4b7671aa1165d9"
+            ]
+        ]
+    },
+    {
+        "id": "8ce3760232bb7833",
+        "type": "noraf-switch",
+        "z": "9fa64bccef20b494",
+        "devicename": "Controllo qualità",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "2ea0507ebba899d6",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "off",
+        "twofactorpin": "",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "79af65a690ef7ac7"
+            ]
+        ]
+    },
+    {
+        "id": "79af65a690ef7ac7",
+        "type": "link out",
+        "z": "9fa64bccef20b494",
+        "name": "Fan Switch Link",
+        "mode": "link",
+        "links": [
+            "9bae4a2af60ef209"
+        ],
+        "x": 615,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "e8c9e384d0136f8f",
+        "type": "noraf-switch",
+        "z": "9fa64bccef20b494",
+        "devicename": "Allarme",
+        "roomhint": "",
+        "name": "",
+        "passthru": false,
+        "errorifstateunchaged": false,
+        "nora": "2ea0507ebba899d6",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "twofactor": "pin",
+        "twofactorpin": "1234",
+        "filter": false,
+        "asyncCmd": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 300,
+        "wires": [
+            [
+                "2175a5509b9fbc67"
+            ]
+        ]
+    },
+    {
+        "id": "0735e797c3c0f143",
+        "type": "link in",
+        "z": "9fa64bccef20b494",
+        "name": "",
+        "links": [
+            "4d51ef0bef5fbab3"
+        ],
+        "x": 325,
+        "y": 240,
+        "wires": [
+            [
+                "8ce3760232bb7833"
+            ]
+        ]
+    },
+    {
+        "id": "71e050602efd0522",
+        "type": "link in",
+        "z": "9fa64bccef20b494",
+        "name": "",
+        "links": [
+            "8dd19097f2d76a98"
+        ],
+        "x": 325,
+        "y": 300,
+        "wires": [
+            [
+                "e8c9e384d0136f8f"
+            ]
+        ]
+    },
+    {
+        "id": "2175a5509b9fbc67",
+        "type": "link out",
+        "z": "9fa64bccef20b494",
+        "name": "Alarm Switch Link",
+        "mode": "link",
+        "links": [
+            "759e7ac898fc83df"
+        ],
+        "x": 605,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7aaa711bd0c463fc",
+        "type": "link in",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "links": [
+            "8dd19097f2d76a98"
+        ],
+        "x": 255,
+        "y": 240,
+        "wires": [
+            [
+                "74afbcf4878952b9"
+            ]
+        ]
+    },
+    {
+        "id": "180ba9ea5124c614",
+        "type": "function",
+        "z": "b8b00db06149ad3f",
+        "name": "safetyFunctionOnOff",
+        "func": "var content, chatid=[-1001521414954];\n\nfunction getMinutes2(){\n    minutes=new Date().getMinutes();\n    \n    if(minutes<10){\n        return \"0\"+minutes;\n    }\n    \n    return minutes;\n}\n\nfunction getSeconds2(){\n    seconds=new Date().getSeconds();\n    \n    if(seconds<10){\n        return \"0\"+seconds;\n    }\n    \n    return seconds;\n}\n\nvar today = new Date();\nvar date = today.getDate()+\"-\"+(today.getMonth()+1)+\"-\"+today.getFullYear();\nvar time = today.getHours()+\":\"+getMinutes2()+\":\"+getSeconds2();\nvar dateTime = \"Date: \"+date+\"\\nTime: \"+time;\n\nif(msg.payload==true){\n    msg.payload={\"chatId\":chatid,\n            \"sentMessageID\":46,\n            \"type\":\"message\",\n            \"content\":\"🔒 Safety System has been activated.\"+\"\\n\\n\\n\"+dateTime}\n}\nelse if(msg.payload==false){\n    msg.payload={\"chatId\":chatid,\n            \"sentMessageID\":46,\n            \"type\":\"message\",\n            \"content\":\"🔓 Safety System has been deactivated.\"+\"\\n\\n\\n\"+dateTime}\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "11c9bcc80b3c4cdb"
+            ]
+        ]
+    },
+    {
+        "id": "11c9bcc80b3c4cdb",
+        "type": "telegram sender",
+        "z": "b8b00db06149ad3f",
+        "name": "Safety System Status",
+        "bot": "ade52f3e808c7c25",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b854a776284ec1ff",
+        "type": "link in",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "links": [
+            "4d51ef0bef5fbab3"
+        ],
+        "x": 255,
+        "y": 300,
+        "wires": [
+            [
+                "1fdc7f302b1aa882"
+            ]
+        ]
+    },
+    {
+        "id": "e6bfd811e3a4f35f",
+        "type": "function",
+        "z": "b8b00db06149ad3f",
+        "name": "careFunctionOnOff",
+        "func": "var content, chatid=[-1001521414954];\n\nfunction getMinutes2(){\n    minutes=new Date().getMinutes();\n    \n    if(minutes<10){\n        return \"0\"+minutes;\n    }\n    \n    return minutes;\n}\n\nfunction getSeconds2(){\n    seconds=new Date().getSeconds();\n    \n    if(seconds<10){\n        return \"0\"+seconds;\n    }\n    \n    return seconds;\n}\n\nvar today = new Date();\nvar date = today.getDate()+\"-\"+(today.getMonth()+1)+\"-\"+today.getFullYear();\nvar time = today.getHours()+\":\"+getMinutes2()+\":\"+getSeconds2();\nvar dateTime = \"Date: \"+date+\"\\nTime: \"+time;\n\n\nif(msg.payload==true){\n    msg.payload={\"chatId\":chatid,\n            \"sentMessageID\":47,\n            \"type\":\"message\",\n            \"content\":\"⚕️ Care System has been activated.\"+\"\\n\\n\\n\"+dateTime}\n}\nelse if(msg.payload==false){\n    msg.payload={\"chatId\":chatid,\n            \"sentMessageID\":47,\n            \"type\":\"message\",\n            \"content\":\"⚕️ Care System has been deactivated.\"+\"\\n\\n\\n\"+dateTime}\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "09bbb7404cfdc732"
+            ]
+        ]
+    },
+    {
+        "id": "09bbb7404cfdc732",
+        "type": "telegram sender",
+        "z": "b8b00db06149ad3f",
+        "name": "Care System Status",
+        "bot": "ade52f3e808c7c25",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2bffa2e9e55ec6d7",
+        "type": "telegram sender",
+        "z": "b8b00db06149ad3f",
+        "name": "Intruder Message",
+        "bot": "ade52f3e808c7c25",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb85d41ef02ccbc7",
+        "type": "function",
+        "z": "b8b00db06149ad3f",
+        "name": "intruderFunction",
+        "func": "var content, chatid=[-1001521414954];\n\nfunction getMinutes2(){\n    minutes=new Date().getMinutes();\n    \n    if(minutes<10){\n        return \"0\"+minutes;\n    }\n    \n    return minutes;\n}\n\nfunction getSeconds2(){\n    seconds=new Date().getSeconds();\n    \n    if(seconds<10){\n        return \"0\"+seconds;\n    }\n    \n    return seconds;\n}\n\nvar today = new Date();\nvar date = today.getDate()+\"-\"+(today.getMonth()+1)+\"-\"+today.getFullYear();\nvar time = today.getHours()+\":\"+getMinutes2()+\":\"+getSeconds2();\nvar dateTime =\"Date: \"+date+\"\\nTime: \"+time;\n\n\nmsg.payload={\"chatId\":chatid,\n            \"sentMessageID\":46,\n            \"type\":\"message\",\n            \"content\":\"❗WARNING: Intruder in your house!\"+\"\\n\\n\\n\"+dateTime}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [
+                "2bffa2e9e55ec6d7"
+            ]
+        ]
+    },
+    {
+        "id": "dad003f6a2eaec4a",
+        "type": "link in",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "links": [
+            "0465e0c16b39b381"
+        ],
+        "x": 255,
+        "y": 120,
+        "wires": [
+            [
+                "6d57239c039650d5"
+            ]
+        ]
+    },
+    {
+        "id": "ef0c41f8bd655628",
+        "type": "link in",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "links": [
+            "35abb1507652179e"
+        ],
+        "x": 255,
+        "y": 180,
+        "wires": [
+            [
+                "9df340532eb156d4"
+            ]
+        ]
+    },
+    {
+        "id": "613065696d1c1411",
+        "type": "function",
+        "z": "b8b00db06149ad3f",
+        "name": "highGasValueFunction",
+        "func": "var content, chatid=[-1001521414954];\n\nfunction getMinutes2(){\n    minutes=new Date().getMinutes();\n    \n    if(minutes<10){\n        return \"0\"+minutes;\n    }\n    \n    return minutes;\n}\n\nfunction getSeconds2(){\n    seconds=new Date().getSeconds();\n    \n    if(seconds<10){\n        return \"0\"+seconds;\n    }\n    \n    return seconds;\n}\n\nvar today = new Date();\nvar date = today.getDate()+\"-\"+(today.getMonth()+1)+\"-\"+today.getFullYear();\nvar time = today.getHours()+\":\"+getMinutes2()+\":\"+getSeconds2();\nvar dateTime =\"Date: \"+date+\"\\nTime: \"+time;\n\n\nmsg.payload={\"chatId\":chatid,\n            \"sentMessageID\":48,\n            \"type\":\"message\",\n            \"content\":\"❗WARNING: High Gas Value.\"+\"\\n\\n\\n\"+dateTime}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "c3b3309902f8c582"
+            ]
+        ]
+    },
+    {
+        "id": "c3b3309902f8c582",
+        "type": "telegram sender",
+        "z": "b8b00db06149ad3f",
+        "name": "High Gas Value",
+        "bot": "ade52f3e808c7c25",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9df340532eb156d4",
+        "type": "rbe",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "613065696d1c1411"
+            ]
+        ]
+    },
+    {
+        "id": "74afbcf4878952b9",
+        "type": "rbe",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "180ba9ea5124c614"
+            ]
+        ]
+    },
+    {
+        "id": "1fdc7f302b1aa882",
+        "type": "rbe",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "e6bfd811e3a4f35f"
+            ]
+        ]
+    },
+    {
+        "id": "6d57239c039650d5",
+        "type": "rbe",
+        "z": "b8b00db06149ad3f",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "bb85d41ef02ccbc7"
+            ]
+        ]
+    },
+    {
+        "id": "1c2d2da134ba8480",
+        "type": "template",
+        "z": "46bf4f1a2855f283",
+        "name": "Intruder message",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "WARNING: Intruder in your house!",
+        "output": "str",
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "2580e775be5402bb",
+                "28cc8f87c4ee979f"
+            ]
+        ]
+    },
+    {
+        "id": "2580e775be5402bb",
+        "type": "ui_toast",
+        "z": "46bf4f1a2855f283",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "28cc8f87c4ee979f"
+            ]
+        ]
+    },
+    {
+        "id": "0465e0c16b39b381",
+        "type": "link out",
+        "z": "46bf4f1a2855f283",
+        "name": "Intruder Message Telegram Link",
+        "mode": "link",
+        "links": [
+            "dad003f6a2eaec4a",
+            "0834ef9d44bed55d"
+        ],
+        "x": 305,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d9c4540901e4f7fd",
+        "type": "ui_toast",
+        "z": "46bf4f1a2855f283",
+        "position": "bottom right",
+        "displayTime": "15",
+        "highlight": "black",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "07bf5f7a49ec1677",
+        "type": "template",
+        "z": "46bf4f1a2855f283",
+        "name": "High gas value",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "WARNING: High Gas Value.",
+        "output": "str",
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "35abb1507652179e",
+                "d9c4540901e4f7fd"
+            ]
+        ]
+    },
+    {
+        "id": "cb8cc1b1a1841c86",
+        "type": "link in",
+        "z": "46bf4f1a2855f283",
+        "name": "",
+        "links": [
+            "8b3e7033d5e08661"
+        ],
+        "x": 215,
+        "y": 300,
+        "wires": [
+            [
+                "3e807d5b0820f80b"
+            ]
+        ]
+    },
+    {
+        "id": "35abb1507652179e",
+        "type": "link out",
+        "z": "46bf4f1a2855f283",
+        "name": "High Gas Value Alarm Link",
+        "mode": "link",
+        "links": [
+            "ef0c41f8bd655628"
+        ],
+        "x": 715,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "624c094f59d085fa",
+        "type": "link in",
+        "z": "46bf4f1a2855f283",
+        "name": "",
+        "links": [
+            "15a89e03552918be"
+        ],
+        "x": 145,
+        "y": 80,
+        "wires": [
+            [
+                "0465e0c16b39b381",
+                "36f8247aa09d71e1"
+            ]
+        ]
+    },
+    {
+        "id": "36f8247aa09d71e1",
+        "type": "delay",
+        "z": "46bf4f1a2855f283",
+        "name": "IntruderDelay",
+        "pauseType": "rate",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "1c2d2da134ba8480"
+            ]
+        ]
+    },
+    {
+        "id": "3e807d5b0820f80b",
+        "type": "delay",
+        "z": "46bf4f1a2855f283",
+        "name": "GasDelay",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "07bf5f7a49ec1677"
+            ]
+        ]
+    },
+    {
+        "id": "28cc8f87c4ee979f",
+        "type": "trigger",
+        "z": "46bf4f1a2855f283",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "-10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "OK",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "e9db0dbbf52278ad"
+            ]
+        ]
+    },
+    {
+        "id": "e9db0dbbf52278ad",
+        "type": "ui_audio",
+        "z": "46bf4f1a2855f283",
+        "name": "Intruder audio",
+        "group": "54b10bc2cbab0d7b",
+        "voice": "Microsoft Hazel - English (United Kingdom)",
+        "always": "",
+        "x": 900,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "421155fcded3e1d3",
+        "type": "mqtt in",
+        "z": "6043facb0a1b0b51",
+        "name": "Safety System",
+        "topic": "Safety",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7bb0b5cf7a629cfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 80,
+        "wires": [
+            [
+                "8de5d3b697bb2a9c"
+            ]
+        ]
+    },
+    {
+        "id": "bf6c12817e192b63",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "Alarm Activated MQTT Link",
+        "mode": "link",
+        "links": [
+            "759e7ac898fc83df"
+        ],
+        "x": 785,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "9544fb076ec6e8de",
+        "type": "change",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 40,
+        "wires": [
+            [
+                "bf6c12817e192b63"
+            ]
+        ]
+    },
+    {
+        "id": "8de5d3b697bb2a9c",
+        "type": "switch",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Safety System Attivato",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Safety System Disattivato",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 80,
+        "wires": [
+            [
+                "9544fb076ec6e8de"
+            ],
+            [
+                "6195482352d6f722"
+            ]
+        ]
+    },
+    {
+        "id": "6195482352d6f722",
+        "type": "change",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "3ee8f542aa25af2a"
+            ]
+        ]
+    },
+    {
+        "id": "3ee8f542aa25af2a",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "Alarm Deactivated MQTT Link",
+        "mode": "link",
+        "links": [
+            "759e7ac898fc83df"
+        ],
+        "x": 785,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a17e4ee9506598e8",
+        "type": "mqtt in",
+        "z": "6043facb0a1b0b51",
+        "name": "Fan",
+        "topic": "Fan",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7bb0b5cf7a629cfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "4e0d0f4a99ddd1bc"
+            ]
+        ]
+    },
+    {
+        "id": "4e0d0f4a99ddd1bc",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "Fan MQTT Link",
+        "mode": "link",
+        "links": [
+            "55f5d759788b516e"
+        ],
+        "x": 345,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7809f541df0429de",
+        "type": "mqtt in",
+        "z": "6043facb0a1b0b51",
+        "name": "Gas Detector",
+        "topic": "Gas",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7bb0b5cf7a629cfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "d258343943512ca8"
+            ]
+        ]
+    },
+    {
+        "id": "73fc781c02133876",
+        "type": "mqtt in",
+        "z": "6043facb0a1b0b51",
+        "name": "PEL Value",
+        "topic": "Pel",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7bb0b5cf7a629cfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "4dab2f90b370b728"
+            ]
+        ]
+    },
+    {
+        "id": "9420b98d951479d1",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "PEL Value MQTT Link",
+        "mode": "link",
+        "links": [
+            "5e1110aa61dfeb55"
+        ],
+        "x": 755,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8b3e7033d5e08661",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "High Gas Value Link",
+        "mode": "link",
+        "links": [
+            "cb8cc1b1a1841c86"
+        ],
+        "x": 695,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d258343943512ca8",
+        "type": "change",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "WARNING:High gas level",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "8b3e7033d5e08661"
+            ]
+        ]
+    },
+    {
+        "id": "a405ab5458275760",
+        "type": "mqtt in",
+        "z": "6043facb0a1b0b51",
+        "name": "Intruder Alarm",
+        "topic": "Intruder",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7bb0b5cf7a629cfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "eb402944f79eba14"
+            ]
+        ]
+    },
+    {
+        "id": "eb402944f79eba14",
+        "type": "change",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "INTRUSO",
+                "fromt": "str",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "15a89e03552918be"
+            ]
+        ]
+    },
+    {
+        "id": "15a89e03552918be",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "Intruder Alarm Link",
+        "mode": "link",
+        "links": [
+            "624c094f59d085fa",
+            "d51672cf82759836",
+            "e1dd5ca5e3cbc6f2"
+        ],
+        "x": 695,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2620b064afd1547d",
+        "type": "mqtt out",
+        "z": "6043facb0a1b0b51",
+        "name": "Set Safety System",
+        "topic": "SafetyReceive",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7bb0b5cf7a629cfc",
+        "x": 410,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "8d585f09c89b67a5",
+        "type": "link in",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "links": [
+            "8dd19097f2d76a98"
+        ],
+        "x": 215,
+        "y": 460,
+        "wires": [
+            [
+                "2620b064afd1547d"
+            ]
+        ]
+    },
+    {
+        "id": "b25e3e2e81afc0ed",
+        "type": "mqtt out",
+        "z": "6043facb0a1b0b51",
+        "name": "Set Care System",
+        "topic": "CareReceive",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7bb0b5cf7a629cfc",
+        "x": 410,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "071c17e7cf2ee5c3",
+        "type": "link in",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "links": [
+            "4d51ef0bef5fbab3"
+        ],
+        "x": 215,
+        "y": 520,
+        "wires": [
+            [
+                "b25e3e2e81afc0ed"
+            ]
+        ]
+    },
+    {
+        "id": "8e1c6c4ec0e6348b",
+        "type": "mqtt in",
+        "z": "6043facb0a1b0b51",
+        "name": "Care System",
+        "topic": "Care",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7bb0b5cf7a629cfc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 380,
+        "wires": [
+            [
+                "1d96ef37d304761c"
+            ]
+        ]
+    },
+    {
+        "id": "3bb2c18d17f6ea38",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "Care Activated MQTT Link",
+        "mode": "link",
+        "links": [
+            "9bae4a2af60ef209"
+        ],
+        "x": 785,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a3dfb1a00cdabb27",
+        "type": "change",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "3bb2c18d17f6ea38"
+            ]
+        ]
+    },
+    {
+        "id": "1d96ef37d304761c",
+        "type": "switch",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Care System Attivato",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Care System Disattivato",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 380,
+        "wires": [
+            [
+                "a3dfb1a00cdabb27"
+            ],
+            [
+                "5cc48e1543654bd9"
+            ]
+        ]
+    },
+    {
+        "id": "5cc48e1543654bd9",
+        "type": "change",
+        "z": "6043facb0a1b0b51",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "fb163bd86e7e3339"
+            ]
+        ]
+    },
+    {
+        "id": "fb163bd86e7e3339",
+        "type": "link out",
+        "z": "6043facb0a1b0b51",
+        "name": "Care Deactivated MQTT Link",
+        "mode": "link",
+        "links": [
+            "9bae4a2af60ef209"
+        ],
+        "x": 785,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4dab2f90b370b728",
+        "type": "function",
+        "z": "6043facb0a1b0b51",
+        "name": "parseFloatFunction",
+        "func": "msg.payload=parseFloat(msg.payload, 2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "9420b98d951479d1"
+            ]
+        ]
+    }
+]
